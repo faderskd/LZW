@@ -99,6 +99,3 @@ def decompress_file(input_file_name, output_file_name):
             decompressed = decompress_gen.send([int(s) for s in line.split()])
             write_file.write(decompressed)
         decompress_gen.close()
-
-compress_file('input', 'compressed')
-decompress_file('compressed', 'decompressed')
